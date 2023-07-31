@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-vault-config
+  cloud:
+    vault:
+      authentication: TOKEN
+      scheme: http
+      uri: http://localhost:8200
+#      host: 127.0.0.1
+#      port: 8200
+      token: 00000000-0000-0000-0000-000000000000
+      kv:
+        enabled: true
+  config:
+    import: vault://
